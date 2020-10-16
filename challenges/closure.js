@@ -16,9 +16,17 @@ function myFunction() {
 }
 myFunction();
 
-// Explanation: 
+// Explanation: Because it is in a scope that is above it, and can reach "outside" its scope.
 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(num) {
+  let counter = 0;
+  for (let i = 1; i <= num; i++) {
+    counter += i;
+  }
+  return counter;
+}
